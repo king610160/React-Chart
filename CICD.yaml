@@ -14,7 +14,7 @@ phases:
 
 artifacts:
   files:
-    - 'frontend/dist/**/*'  # accumulate the file in frontend
+    - 'dist/**/*'  # accumulate the file in frontend
   base-directory: 'dist'
 
 cache:
