@@ -5,16 +5,20 @@ phases:
     runtime-versions:
       nodejs: 18
     commands:
-      - npm install
+      - npm install  # install in root
+      - cd frontend 
+      - npm install  # install in frontend file
   build:
     commands:
+      - cd frontend
       - npm run build
 
 artifacts:
   files:
-    - '**/*'
+    - 'frontend/build/**/*'  # accumulate the file in frontend
   base-directory: 'dist'
 
 cache:
   path:
     - 'node_modules/**/*'
+    - 'frontend/node_modules/**/*'
