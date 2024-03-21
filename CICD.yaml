@@ -10,13 +10,13 @@ phases:
       - npm install  # install in frontend file
   build:
     commands:
-      - cd frontend
+      - pwd   # print right now
       - npm run build
 
 artifacts:
   files:
     - 'frontend/build/**/*'  # accumulate the file in frontend
-  base-directory: 'dist'
+  base-directory: 'build'
 
 cache:
   path:
