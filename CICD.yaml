@@ -16,7 +16,7 @@ phases:
 artifacts:
   files:
     - 'frontend/build/**/*'  # accumulate the file in frontend
-  base-directory: 'build'
+  base-directory: 'dist'
 
 cache:
   path:
